@@ -1,17 +1,40 @@
-.Nav {
-    width: 100%;
+
+.NavBar {
     height: 15vh;
-    background: white;
-    color: black;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-left: 75%;
+    text-decoration: none;
+    background-color: white;
+    position: sticky;
+    z-index: 999;
+    min-width: 600px;
+    position: sticky;
+}
+
+.Nav {
     display: flex;
     align-items: end;
     justify-content: end;
     position: sticky;
-    padding-top: 1%;
-    padding-bottom: 2%;
+    margin-bottom: 2%;
 }
 
-li {
+.Nav li{
     list-style: none;
-    margin-right: 2%;
+    padding: 7%;
+}
+
+.Nav li a{
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 500;
+    color: black;
+}
+
+.Nav li a:hover{
+    color: lightblue;
 }
