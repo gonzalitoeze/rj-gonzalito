@@ -1,0 +1,17 @@
+.Nav {
+    width: 100%;
+    height: 15vh;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: sticky;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+li {
+    list-style: none;
+    margin-right: 2%;
+}

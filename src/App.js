@@ -1,26 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
-/* import Header from 'Header.js'
- */
+import { Header } from './components/Header/Header';
+import { NavBar } from './components/NavBar/NavBar';
+import { Button } from 'react-bootstrap';
+
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Starting React JS tests.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learning React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+
+      <Header/>
+      <Button>Click</Button>
     </div>
   );
 }
