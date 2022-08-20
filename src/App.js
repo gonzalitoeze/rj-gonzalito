@@ -6,10 +6,13 @@ import { Button } from 'react-bootstrap';
 
 
 
+
 function App() {
   return (
     <div>
-      <NavBar/>
+      <NavBar>
+
+      </NavBar>
 
       <Header/>
       <Button>Click</Button>

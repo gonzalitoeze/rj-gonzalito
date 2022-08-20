@@ -1,4 +1,5 @@
 import './NavBar.scss';
+import  icono  from './icono.webp';
 
 
 
@@ -6,8 +7,10 @@ import './NavBar.scss';
 
 export const NavBar = () => {
     return (
+        
         <div className='NavBar'>
-            <div className="Nav">
+            <img src={icono} class="logo" alt="" />
+            <div className='Nav'>
                 <li><a href='men.js'>Men's</a></li>
                 <li><a href='wemen.js'>Women's</a></li>
                 <li><a href='accesories.js'>Accesories</a></li>

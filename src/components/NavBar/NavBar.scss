@@ -1,12 +1,7 @@
-
-.NavBar {
-    height: 15vh;
+.NavBar{
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: space-between;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    padding-left: 75%;
     text-decoration: none;
     background-color: white;
     position: sticky;
@@ -15,17 +10,23 @@
     position: sticky;
 }
 
-.Nav {
+.logo{
+    width: 10%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.Nav{
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     position: sticky;
-    margin-bottom: 2%;
 }
 
 .Nav li{
     list-style: none;
-    padding: 7%;
+    padding-right: 10%;
+    margin-bottom: 15%;
 }
 
 .Nav li a{
@@ -38,3 +39,4 @@
 .Nav li a:hover{
     color: lightblue;
 }
+
