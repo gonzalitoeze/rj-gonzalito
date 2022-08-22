@@ -7,7 +7,6 @@ import  icono  from './icono.webp';
 
 export const NavBar = () => {
     return (
-        
         <div className='NavBar'>
             <img src={icono} class="logo" alt="" />
             <div className='Nav'>
