@@ -1,6 +1,6 @@
 import './NavBar.scss'; 
-
 import  icono  from './icono.webp';
+import CartWidget from '../CartWidget/CartWidget';
 
 
  export const NavBar = () => {
@@ -12,6 +12,7 @@ import  icono  from './icono.webp';
                 <li><a href='women.js'>Women's</a></li>
                 <li><a href='accesories.js'>Accesories</a></li>
                 <li><a href='contact.js'>Contact</a></li>
+                <li><CartWidget/></li>
             </div>
         </div>
     )
