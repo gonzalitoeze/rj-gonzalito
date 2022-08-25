@@ -5,10 +5,10 @@ const Stock = ( {producto} ) => {
     return (
         <div>
             <h4>Nombre: {nombre}</h4>
-            <p>descripcion: {descripcion}</p>
-            <p>imagen: {imagen}</p>
-            <p>precio: {precio}</p>
-            <p>cantidad: {cantidad}</p>
+            <p>Descripcion: {descripcion}</p>
+            <p>Imagen: {imagen}</p>
+            <p>Precio: {precio}</p>
+            <p>Cantidad: {cantidad}</p>
         </div>
     )
 }

@@ -7,7 +7,7 @@ export const StockContainer = () => {
         {
             nombre: 'Kingz - Gi - White',
             descripcion: 'Material RipStop',
-            img: "../images/kingzwhite.webp",
+            imagen: "./kingzwhite.webp",
             precio: 100,
             cantidad: 1
         },
@@ -21,7 +21,7 @@ export const StockContainer = () => {
     ]
 
     return (
-        <div>
+        <div className="stock">
             <Stock producto={ stocks[0] }/>
             <Stock producto={ stocks[1] }/>
         </div>
