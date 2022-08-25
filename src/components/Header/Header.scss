@@ -1,4 +1,18 @@
 .header {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: double;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(33, 37, 41);
+    color: white;
+    padding-top: 5%;
+    height: 35vh;
+    width: 100%;
+    min-width: 600px;
+}
+.Saludo {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    font-style: oblique;
 }

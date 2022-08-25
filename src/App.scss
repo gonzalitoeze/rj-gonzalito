@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+
+.App {
+    text-align: center;
+}
+body {
+    background: rgb(33, 37, 41); 
+    color: black;
+}
+.banner{
+    width: 100%;
+    min-width: 300px;
+}
+section{
+    background-color: black;
+    width: 100%;
+    min-width: 600px;
+}
