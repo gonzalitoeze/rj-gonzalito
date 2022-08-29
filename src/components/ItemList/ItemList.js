@@ -26,7 +26,7 @@ import ItemCount from '../ItemCount/ItemCount';
                     <CardText>
                     ${precio}
                     </CardText>
-                    <ItemCount/>
+                    <ItemCount stock={stock}/>
                 </CardBody>
                 <CardFooter>
                     Stock: {stock}

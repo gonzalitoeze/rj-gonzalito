@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from 'reactstrap'
 
-const ItemCount = () => {
+const ItemCount = ({stock}) => {
+    const [count, setCount] = useState (0);
+
+    const handleAdd = () => {
+        if (count < stock){
+            setCount(count+1)
+        }
+    }
+
+    const handleSubstract = () => {
+        if (count > 0){
+            setCount(count-1)
+        }
+    }
+
     return (
         <div>
             <p>Amount:</p>
-            <Button> - </Button>
-            <span style={{marginLeft: "5%", marginRight: "5%"}}>0</span>
-            <Button> + </Button>
-            <Button style={{width: "100%" , marginTop: "10%"}}> Add to cart </Button>
+            <Button onClick={handleSubstract}> - </Button>
+            <span style={{marginLeft: "5%", marginRight: "5%"}}>{count}</span>
+            <Button onClick={handleAdd}> + </Button>
+            <Button style={{width: "100%" , marginTop: "10%"}} disable={stock < 0}> Add to cart </Button>
         </div>
     )
 }

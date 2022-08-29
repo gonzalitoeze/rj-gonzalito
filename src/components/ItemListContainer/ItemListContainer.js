@@ -26,7 +26,7 @@ export const ItemListContainer = () => {
             descripcion: 'Material RipStop',
             imagen: "./img/kingzblack.webp",
             precio: 150,
-            stock: 20
+            stock: 8
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ export const ItemListContainer = () => {
             descripcion: 'Material RipStop',
             imagen: "./img/kingzblue.webp",
             precio: 120,
-            stock: 30
+            stock: 10
         },
         {
             id: 4,
@@ -42,7 +42,7 @@ export const ItemListContainer = () => {
             descripcion: 'Made with high resistance Ultra Light Weight Material 4.0',
             imagen: "./img/kingzgreen.webp",
             precio: 199,
-            stock: 40
+            stock: 4
         },
         {
             id: 5,
@@ -50,7 +50,7 @@ export const ItemListContainer = () => {
             descripcion: 'Made with high resistance Ultra Light Weight Material 4.0',
             imagen: "./img/kingzgrey.jpg",
             precio: 199,
-            stock: 50
+            stock: 3
         },
         {
             id: 6,
@@ -58,7 +58,7 @@ export const ItemListContainer = () => {
             descripcion: 'Material RipStop',
             imagen: "./img/kingzwhite.webp",
             precio: 170,
-            stock: 60
+            stock: 0
         },
     ]
 
