@@ -18,13 +18,10 @@ export const Contador = () => {
     }
 
     return (
-        <div className="container my-5">
-            <h2>Contador</h2>
-            <hr/>
-
-            <button onClick={handleRestar} className="btn btn-outline-primary">-</button>
+        <div className="container mb-2 text-start">
+            <button onClick={handleRestar} className="btn btn-outline-secondary rounded-1">-</button>
             <span className="mx-2">{counter}</span>
-            <button onClick={handleSumar} className="btn btn-primary">+</button>
+            <button onClick={handleSumar} className="btn btn-primary rounded-1">+</button>
         </div>
     )
 }

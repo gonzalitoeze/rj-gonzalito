@@ -3,10 +3,9 @@ import './App.scss';
 import { NavBar } from './components/NavBar/NavBar';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
-import foto from './images/bannerimg.jpeg';
-import { Contador } from './components/Contador/Contador';
-import { StockContainer } from './components/Stock/StockContainer'; 
-
+import foto from './bannerimg.jpeg';
+import { StockContainer } from './components/Stock/StockContainer';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
 
       <StockContainer/>
 
-      <Contador/>
+      <ItemListContainer/>
 
       <Footer/>
     </div>

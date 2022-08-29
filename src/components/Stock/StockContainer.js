@@ -1,5 +1,5 @@
 import Stock from "./Stock"
-
+import './StockContainer.scss'
 
 export const StockContainer = () => {
 
@@ -7,23 +7,43 @@ export const StockContainer = () => {
         {
             nombre: 'Kingz - Gi - White',
             descripcion: 'Material RipStop',
-            imagen: "./kingzwhite.webp",
+            imagen: '../../images/kingzwhite2.webp',
             precio: 100,
-            cantidad: 1
+            cantidad: ""
         },
         {
             nombre: 'Kingz - Gi - White',
             descripcion: 'Ultra Light',
-            img: "../images/kingzwhite2.webp",
+            img: '../../images/kingzwhite2.webp',
             precio: 90,
-            cantidad: 1
+            cantidad: ""
+        },
+        {
+            nombre: 'Kingz - Gi - White',
+            descripcion: 'Ultra Light',
+            img: "../../images/kingzwhite2.webp",
+            precio: 90,
+            cantidad: ""
         }
     ]
 
     return (
-        <div className="stock">
-            <Stock producto={ stocks[0] }/>
-            <Stock producto={ stocks[1] }/>
+
+        <div className="StockContainer">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-4">
+                        <Stock producto={ stocks[0] }/>
+                    </div>
+                    <div className="col-md-4">
+                        <Stock producto={ stocks[1] }/>
+                    </div>
+                    <div className="col-md-4">
+                        <Stock producto={ stocks[2] }/>
+                    </div>
+                </div>
+            </div>
         </div>
+
     )
 }
