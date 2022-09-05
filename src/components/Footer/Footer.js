@@ -10,9 +10,8 @@ import  whatsapp  from './whatsapp.png'
 export const Footer = () => {
     return(
         <div class="Footer">
-            <img src={icono} class="logo" alt=""/>
+            <img src={icono} class="imagen" alt=""/>
             <div class="contact">
-                <h3>Contact</h3>
                 <p><strong>Adress:</strong> Ensenada 194 PB D, Ciudad Autónoma de Buenos Aires</p>
                 <p><strong>Phone:</strong> (+54) 11-6421-6419</p>
                 <p><strong>Hours:</strong> 8:00 - 18:00 / Mon-Sat</p>

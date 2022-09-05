@@ -6,13 +6,18 @@ import ItemCount from '../ItemCount/ItemCount';
  const ItemList = (props) => {
 
     const {nombre, descripcion, imagen, precio, stock} = props;
+
+    const addToCart = (count) => {
+        console.log (count, nombre, precio, "has been added")
+    }
+
     return (
         <>
         
             <Card
                 className="my-2"
                 style={{
-                    width: '18rem'
+                    width: '100%'
                 }}
             >
                 <img src={imagen} alt="" />
@@ -24,9 +29,9 @@ import ItemCount from '../ItemCount/ItemCount';
                         {descripcion}
                     </CardText>
                     <CardText>
-                    ${precio}
+                        ${precio}
                     </CardText>
-                    <ItemCount stock={stock}/>
+                    <ItemCount stock={stock} addToCart={addToCart}/>
                 </CardBody>
                 <CardFooter>
                     Stock: {stock}

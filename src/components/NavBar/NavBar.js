@@ -2,16 +2,15 @@ import './NavBar.scss';
 import  icono  from './icono.webp';
 import CartWidget from '../CartWidget/CartWidget';
 
-
  export const NavBar = () => {
     return (
         <div className='NavBar'>
-            <img src={icono} class="logo" alt="" />
+            <a href='/'><img src={icono} class="logo" alt="" /></a>
             <div className='Nav'>
-                <li><a href='men.js'>Men's</a></li>
-                <li><a href='women.js'>Women's</a></li>
-                <li><a href='accesories.js'>Accesories</a></li>
-                <li><a href='contact.js'>Contact</a></li>
+                <li><a href='Men'>Men's</a></li>
+                <li><a href='Women'>Women's</a></li>
+                <li><a href='Accesories'>Accesories</a></li>
+                <li><a href='Contact'>Contact</a></li>
                 <li><CartWidget/></li>
             </div>
         </div>

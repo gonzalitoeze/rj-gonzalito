@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from 'reactstrap'
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, addToCart}) => {
     const [count, setCount] = useState (0);
 
     const handleAdd = () => {
@@ -22,7 +22,7 @@ const ItemCount = ({stock}) => {
             <Button onClick={handleSubstract}> - </Button>
             <span style={{marginLeft: "5%", marginRight: "5%"}}>{count}</span>
             <Button onClick={handleAdd}> + </Button>
-            <Button style={{width: "100%" , marginTop: "10%"}} disable={stock < 0}> Add to cart </Button>
+            <Button style={{width: "100%" , marginTop: "10%"}} disable={stock < 0} onClick={() => addToCart(count)}> Add to cart </Button>
         </div>
     )
 }
