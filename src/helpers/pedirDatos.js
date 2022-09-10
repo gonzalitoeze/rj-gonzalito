@@ -6,7 +6,7 @@ export const pedirDatos = () => {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
             resolve(stock)
-        }, 1500)
-        
+        }, 5000)
     })
 }
+export default pedirDatos

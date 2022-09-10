@@ -1,9 +1,53 @@
-import { Contador } from "../Contador/Contador";
+/* import { Contador } from "../Contador/Contador";
+ */
 
 
+import React from 'react';
+import { Card, CardBody, CardFooter, CardText, CardTitle } from 'reactstrap'
+import ItemCount from '../ItemCount/ItemCount';
 
 
-const Item = ({producto}) => {
+ const Item  = ( {productos} ) => {
+
+    const {nombre, descripcion, imagen, precio, stock} = productos;
+
+    const addToCart = (count) => {
+        console.log (count, nombre, precio, "has been added")
+    }
+
+    return (
+        <>
+        
+            <Card
+                className="my-2"
+                style={{
+                    width: '100%'
+                }}
+            >
+                <img src={imagen} alt="" />
+                <CardBody>
+                    <CardTitle tag="h5">
+                        {nombre}
+                    </CardTitle>
+                    <CardText>
+                        {descripcion}
+                    </CardText>
+                    <CardText>
+                        ${precio}
+                    </CardText>
+                    <ItemCount stock={stock} addToCart={addToCart}/>
+                </CardBody>
+                <CardFooter>
+                    Stock: {stock}
+                </CardFooter>
+            </Card>
+        </>
+    )
+}
+
+export default Item
+
+/* const Item = ({producto}) => {
     return (
         <div className="card">
             <div className="card-body">
@@ -18,4 +62,4 @@ const Item = ({producto}) => {
         </div>
     )
 }
- export default Item
+ export default Item */

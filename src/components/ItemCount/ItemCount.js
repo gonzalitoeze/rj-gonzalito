@@ -22,7 +22,8 @@ const ItemCount = ({stock, addToCart}) => {
             <Button onClick={handleSubstract}> - </Button>
             <span style={{marginLeft: "5%", marginRight: "5%"}}>{count}</span>
             <Button onClick={handleAdd}> + </Button>
-            <Button style={{width: "100%" , marginTop: "10%"}} disable={stock < 0} onClick={() => addToCart(count)}> Add to cart </Button>
+            <Button style={{width: "100%" , marginTop: "10%", backgroundColor: "white", color: 'black'}}> View Details </Button>
+            <Button style={{width: "100%" , marginTop: "3%"}} disable={stock < 0} onClick={() => addToCart(count)}> Add to cart </Button>
         </div>
     )
 }

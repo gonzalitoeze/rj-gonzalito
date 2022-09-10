@@ -1,16 +1,19 @@
+
 import './NavBar.scss'; 
 import  icono  from './icono.webp';
+import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
 
  export const NavBar = () => {
     return (
         <div className='NavBar'>
-            <a href='/'><img src={icono} class="logo" alt="" /></a>
+            <Link to='/'><img src={icono} class="logo" alt="" /></Link>
             <div className='Nav'>
-                <li><a href='Men'>Men's</a></li>
-                <li><a href='Women'>Women's</a></li>
-                <li><a href='Accesories'>Accesories</a></li>
-                <li><a href='Contact'>Contact</a></li>
+                <li><Link to='/productos/man'>Men's</Link></li>
+                <li><Link to='/productos/woman'>Women's</Link></li>
+                <li><Link to='/productos/nogi'>Gi/NoGi</Link></li>
+                <li><Link to='/productos/accesories'>Accesories</Link></li>
+                <li><Link to='/Contact'>Contact</Link></li>
                 <li><CartWidget/></li>
             </div>
         </div>

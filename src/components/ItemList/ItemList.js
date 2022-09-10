@@ -1,4 +1,28 @@
-import React from 'react';
+import Item from '../Item/Item'
+
+
+
+const ItemList = ( {productos = []} ) => {
+    return (
+        <div className='container my-5'>
+            <h2 className='text white'>Hola</h2>
+            { productos.map((prod) => <Item producto={prod} key={prod.id}/>)}
+        </div>
+
+    )
+}
+export default ItemList
+
+
+
+
+
+
+
+
+
+
+/* import React from 'react';
 import { Card, CardBody, CardFooter, CardText, CardTitle } from 'reactstrap'
 import ItemCount from '../ItemCount/ItemCount';
 
@@ -41,4 +65,4 @@ import ItemCount from '../ItemCount/ItemCount';
     )
 }
 
-export default ItemList
+export default ItemList */
