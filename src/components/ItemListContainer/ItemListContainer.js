@@ -57,14 +57,14 @@ export const ItemListContainer = () => {
             <div className="container">
                 <div className="row">
                     {
-                        /* loading 
+                        loading 
                         ? <h2>Cargando...</h2>
-                        : <ItemList productos={productos}/> */
-                        productos.map((productos) => (
+                        : <ItemList productos={productos}/>
+                        /* productos.map((productos) => (
                             <div className="col-md-3">
                             <ItemList key={productos.id} nombre={productos.nombre} descripcion={productos.descripcion} imagen={productos.imagen} precio={productos.precio} stock={productos.stock}/>
                             </div>
-                        ))
+                        )) */
                     }
                 </div>
             </div>
