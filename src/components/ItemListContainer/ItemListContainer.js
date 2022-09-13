@@ -10,8 +10,7 @@ export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const { categoriaId } = useParams()
-    console.log(categoriaId)
+    const  {categoriaId} = useParams()
 
     useEffect(() => {
         setLoading(true)
@@ -21,7 +20,7 @@ export const ItemListContainer = () => {
                 if (!categoriaId) {
                     setProductos(res)
                 } else {
-                    setProductos( res.filter((prod) => prod.categoria === categoriaId) )
+                    setProductos( res.filter((productos) => productos.categoria === categoriaId) )
                 }
             })
             .catch( (error) => {
@@ -59,7 +58,7 @@ export const ItemListContainer = () => {
                     {
                         loading 
                         ? <h2>Cargando...</h2>
-                        : <ItemList productos={productos}/>
+                        : <ItemList key={productos.id}/>
                         /* productos.map((productos) => (
                             <div className="col-md-3">
                             <ItemList key={productos.id} nombre={productos.nombre} descripcion={productos.descripcion} imagen={productos.imagen} precio={productos.precio} stock={productos.stock}/>

@@ -1,4 +1,9 @@
-import { useState } from "react"
+import { useState } from "react";
+import Contador from "../Contador/Contador";
+import Select from "../Select/Select";
+
+
+
 
 const ItemDetail= ({item}) => {
 
@@ -21,17 +26,17 @@ const ItemDetail= ({item}) => {
 
     return (
         <div className="container my-5">
-            <img src={item.img}/>
+            <img src={item.img} alt=''/>
             <h3>{item.nombre}</h3>
             <p>{item.desc}</p>
-            <p>{item.category}</p>
+            <p>{item.categoria}</p>
             <h4>{item.precio}</h4>
             <hr/>
             <Select options={item.talles} onSelect={setTalle}/>
             <Select options={item.colores} onSelect={setColor}/>
             <hr/>
 
-            <Counter 
+            <Contador 
                 max={item.stock}
                 counter={cantidad}
                 setCounter={setCantidad}

@@ -4,10 +4,10 @@ import  icono  from './icono.webp';
 import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
 
- export const NavBar = () => {
+export const NavBar = () => {
     return (
         <div className='NavBar'>
-            <Link to='/'><img src={icono} class="logo" alt="" /></Link>
+            <Link to='/'><img src={icono} className="logo" alt="" /></Link>
             <div className='Nav'>
                 <li><Link to='/productos/man'>Men's</Link></li>
                 <li><Link to='/productos/woman'>Women's</Link></li>
